@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        path:hover {
+            fill: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="mapa">
+
+    </div>
+</body>
+
+<script>
+    var url = "https://servicodados.ibge.gov.br/api/v3/malhas/microrregioes/23002?intrarregiao=municipio";
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", url, false);
+    xhttp.send();//A execução do script pára aqui até a requisição retornar do servidor
+
+    const mapa = document.getElementById("mapa");
+    mapa.innerHTML = xhttp.responseText;
+</script>
+</html>

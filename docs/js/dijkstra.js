@@ -140,11 +140,12 @@ function obterCaminho(destino) {
 
 function obterResultado(caminho) {
     let message = "";
+    let distancia = caminho[caminho.length-1].distanciaAcumulada;
     for(let i = 0; i < caminho.length; i++) {
-        message += caminho[i].cidade.nome
-        if(i+1 < caminho.length) message += " -> ";
+        message += caminho[i].cidade.nome;
+        message += (i+1 < caminho.length) ? ", " : ".";
     }
-    return message;
+    return {message, distancia};
 }
 
 function reiniciarDados() {

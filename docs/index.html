@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontre o menor caminho</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Encontre o menor caminho na Ibiapaba</span>
+        </div>
+    </nav>
     <div class="container">
-        <section>
-            <h2>Encontre o menor caminho na Ibiapaba</h2>
-            <div class="form">
-                <select class="form-select mt-3" id="origem">
-                    <option selected disabled value="0">Selecione a origem</option>
-                    <option value="2314102">Viçosa</option>
-                    <option value="2313401">Tianguá</option>
-                    <option value="2313609">Ubajara</option>
-                    <option value="2305308">Ibiapina</option>
-                    <option value="2312304">São Benedito</option>
-                    <option value="2303402">Carnaubal</option>
-                    <option value="2305001">Guaraciaba do Norte</option>
-                    <option value="2304236">Croatá</option>
-                </select>
-                <select class="form-select mt-3" id="destino">
-                    <option selected disabled value="0">Selecione o destino</option>
-                    <option value="2314102">Viçosa</option>
-                    <option value="2313401">Tianguá</option>
-                    <option value="2313609">Ubajara</option>
-                    <option value="2305308">Ibiapina</option>
-                    <option value="2312304">São Benedito</option>
-                    <option value="2303402">Carnaubal</option>
-                    <option value="2305001">Guaraciaba do Norte</option>
-                    <option value="2304236">Croatá</option>
-                </select>
+        <div class="mapa-container">
+            <div id="title-map">
+                <h4 class="text-center">Malha geográfica da Microrregião da Ibiapaba</h4>
             </div>
-            <button type="button" class="btn btn-primary mt-3" id="btn-calcular">Calcular</button>
-            <div id="msg-container">
-
+            <div id="map"></div>
+        </div>
+        <div class="container-result">
+            <div class="container-align">
+                <span>Origem</span>
+                <div class="alert alert-primary mb-4" role="alert" id="origem-container">
+                    Selecione a cidade de origem pelo mapa
+                </div>
+                <span>Destino</span>
+                <div class="alert alert-danger mb-4" role="alert" id="destino-container">
+                    Selecione a cidade de destino pelo mapa
+                </div>
+                <div id="resultados-container">
+                    <span>Resultados</span>
+                    <div class="alert alert-success" role="alert" id="destino-container">
+                        <strong>Cidades:</strong>
+                        <p id="cidades-result"></p>
+                        <strong>Distância:</strong>
+                        <p id="distancia-result"></p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
 
-    <script src="./dijkstra.js"></script>
-    <script src="./script.js"></script>
+    <script src="js/dijkstra.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
