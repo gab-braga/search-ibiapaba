@@ -66,7 +66,7 @@ function showTitleCidadeOrigem(cidadeId = null) {
             `;
     }
     else if(values[ORIGEM] == null) {
-        titleContainer.innerHTML = "Selecione a cidade de origem pelo mapa";
+        titleContainer.innerHTML = "Selecione no mapa";
     }
 }
 
@@ -82,14 +82,14 @@ function showTitleCidadeDestino(cidadeId = null) {
         `;
     }
     else if(values[DESTINO] == null) {
-        titleContainer.innerHTML = "Selecione a cidade de destino pelo mapa";
+        titleContainer.innerHTML = "Selecione no mapa";
     }
 }
 
 function obterNomeCidadePorId(id) {
     switch (id) {
         case "2314102":
-            return "Viçosa";
+            return "Viçosa do Ceará";
         case "2313401":
             return "Tianguá";
         case "2313609":

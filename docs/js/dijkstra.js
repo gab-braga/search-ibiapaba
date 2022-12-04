@@ -31,7 +31,7 @@ class Aresta {
     }
 }
 
-const vicosa = new Cidade(2314102, "Viçosa");
+const vicosa = new Cidade(2314102, "Viçosa do Ceará");
 const tiangua = new Cidade(2313401, "Tianguá");
 const ubajara = new Cidade(2313609, "Ubajara");
 const ipiapina = new Cidade(2305308, "Ibiapina");
