@@ -61,7 +61,7 @@ html, body {
 #map path {
     fill: #F5EFE6;
     cursor: pointer;
-    stroke: #B4CDE6;
+    stroke: #5595d4;
     stroke-width: 1rem;
 }
 
@@ -112,11 +112,11 @@ html, body {
 }
 
 .blue {
-    fill: #6E85B7 !important;
+    fill: #c2d6ff !important;
 }
 
 .red {
-    fill: #FF7171 !important;
+    fill: #ffc2c2 !important;
 }
 
 #resultados-container {
