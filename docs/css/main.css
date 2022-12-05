@@ -61,7 +61,7 @@ html, body {
 #map path {
     fill: #F5EFE6;
     cursor: pointer;
-    stroke: #85B6E6;
+    stroke: #B4CDE6;
     stroke-width: 1rem;
 }
 
@@ -99,24 +99,24 @@ html, body {
 }
 
 .alert-primary {
-    background-color: #2970ff;
+    background-color: #6E85B7;
 }
 
 .alert-danger {
-    background-color: #ff2929;
+    background-color: #FF7171;
 }
 
 .container-result .alert-success {
-    background-color: #239a3b;
+    background-color: #506D84;
     text-align: left;
 }
 
 .blue {
-    fill: #2970ff !important;
+    fill: #6E85B7 !important;
 }
 
 .red {
-    fill: #ff2929 !important;
+    fill: #FF7171 !important;
 }
 
 #resultados-container {
