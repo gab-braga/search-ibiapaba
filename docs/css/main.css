@@ -67,12 +67,12 @@ html, body {
 
 
 .container-result {
-    width: 50%;
+    width: 32%;
 }
 
 
 .container-result .container-align {
-    min-width: clamp(300px, 100%, 700px);
+    min-width: clamp(300px, 90%, 700px);
     text-align: left;
 }
 
@@ -81,7 +81,7 @@ html, body {
     color: #FFFFFF;
     border: none;
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
 
 .container-result .alert .close {
@@ -123,7 +123,7 @@ html, body {
     display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 960px) {
     .container {
         flex-direction: column;
     }
