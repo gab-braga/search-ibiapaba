@@ -14,7 +14,7 @@ function initilizeMap() {
 }
 
 function definirEventoDeCorCidade() {
-    const cidades = document.getElementsByTagName("path");
+    const cidades = obterListaCidades();
     for (let cidade of cidades) {
         if (values[ORIGEM] == null) {
             cidade.removeEventListener("mouseenter", aplicarCorCidadeDestino)
@@ -33,6 +33,18 @@ function definirEventoDeCorCidade() {
         }
     }
     definirEventoDeClickCidade();
+}
+
+function obterListaCidades() {
+    const vicosa = document.getElementById("2314102");
+    const tiangua = document.getElementById("2313401");
+    const ubajara = document.getElementById("2313609");
+    const ibiapina = document.getElementById("2305308");
+    const saobenedito = document.getElementById("2312304");
+    const carnaubal = document.getElementById("2303402");
+    const guaraciaba = document.getElementById("2305001");
+    const croata = document.getElementById("2304236");
+    return [vicosa, tiangua, ubajara, ibiapina, saobenedito, carnaubal, guaraciaba, croata];
 }
 
 const aplicarCorCidadeOrigem = (event) => {
@@ -108,7 +120,7 @@ function obterNomeCidadePorId(id) {
 }
 
 function definirEventoDeClickCidade() {
-    const cidades = document.getElementsByTagName("path");
+    const cidades = obterListaCidades();
     for (let cidade of cidades) {
         if (values[ORIGEM] == null) {
             cidade.removeEventListener("click", definirCidadeDeDestino);
@@ -160,14 +172,14 @@ function refazerCidade(cidadeId) {
 }
 
 function reiniciarCorCidadeDeOrigem() {
-    const cidades = document.getElementsByTagName("path");
+    const cidades = obterListaCidades();
     for (let cidade of cidades) {
         cidade.classList.remove("blue");
     }
 }
 
 function reiniciarCorCidadeDeDestino() {
-    const cidades = document.getElementsByTagName("path");
+    const cidades = obterListaCidades();
     for (let cidade of cidades) {
         cidade.classList.remove("red");
     }
