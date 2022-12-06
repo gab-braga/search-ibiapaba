@@ -12,27 +12,104 @@
 </head>
 
 <body>
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid justify-content-center">
             <span class="navbar-brand mb-0 h1">Encontre o menor caminho na Ibiapaba</span>
         </div>
     </nav>
     <div class="container">
         <div class="mapa-container">
             <div id="title-map">
-                <h4 class="text-center">Malha geográfica da Microrregião da Ibiapaba</h4>
+                <h1 class="">Serra da Ibiapaba</h1>
+                <p>Malha Geográfica da Microrregião</p>
             </div>
-            <div id="map"></div>
+            <div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M138 137L127 165.5L128 190.5L140.5 212.5L171.5 216.5L188 216" stroke="#CE7777"/>
+                        <circle cx="138" cy="137" r="8" fill="#EF9A53"/>
+                        <circle cx="138" cy="137" r="4" fill="#852999"/>
+                        <circle cx="188" cy="216" r="8" fill="#EF9A53"/>
+                        <circle cx="188" cy="216" r="4" fill="#852999"/>
+                        </svg>                        
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M223 278L212.5 270.5L195.5 240L188 216" stroke="#CE7777"/>
+                        <circle cx="188" cy="216" r="8" fill="#EF9A53"/>
+                        <circle cx="188" cy="216" r="4" fill="#852999"/>
+                        <circle cx="223" cy="278" r="8" fill="#EF9A53"/>
+                        <circle cx="223" cy="278" r="4" fill="#852999"/>
+                        </svg>                         
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M238 312L234 302L223.5 287.5L223 278" stroke="#CE7777"/>
+                        <circle cx="223" cy="278" r="8" fill="#EF9A53"/>
+                        <circle cx="223" cy="278" r="4" fill="#852999"/>
+                        <circle cx="238" cy="312" r="8" fill="#EF9A53"/>
+                        <circle cx="238" cy="312" r="4" fill="#852999"/>
+                        </svg>
+                                                                    
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M250 373L238 312" stroke="#CE7777"/>
+                        <circle cx="238" cy="312" r="8" fill="#EF9A53"/>
+                        <circle cx="238" cy="312" r="4" fill="#852999"/>
+                        <circle cx="250" cy="373" r="8" fill="#EF9A53"/>
+                        <circle cx="250" cy="373" r="4" fill="#852999"/>
+                        </svg>                                              
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M250 373L249 384L244.5 400.5L232.5 405L221 415.5L212 430" stroke="#CE7777"/>
+                        <circle cx="250" cy="373" r="8" fill="#EF9A53"/>
+                        <circle cx="250" cy="373" r="4" fill="#852999"/>
+                        <circle cx="212" cy="430" r="8" fill="#EF9A53"/>
+                        <circle cx="212" cy="430" r="4" fill="#852999"/>
+                        </svg>                                                  
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M250 373L249 384L244.5 400.5L261.5 412L280.5 417L287 422L307 430" stroke="#CE7777"/>
+                        <circle cx="250" cy="373" r="8" fill="#EF9A53"/>
+                        <circle cx="250" cy="373" r="4" fill="#852999"/>
+                        <circle cx="307" cy="430" r="8" fill="#EF9A53"/>
+                        <circle cx="307" cy="430" r="4" fill="#852999"/>
+                        </svg>                                                                                         
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M307 430L287 422L280.5 417L261.5 412L244.5 400.5L232.5 405L221 415.5L212 430" stroke="#CE7777"/>
+                        <circle cx="212" cy="430" r="8" fill="#EF9A53"/>
+                        <circle cx="212" cy="430" r="4" fill="#852999"/>
+                        <circle cx="307" cy="430" r="8" fill="#EF9A53"/>
+                        <circle cx="307" cy="430" r="4" fill="#852999"/>
+                        </svg>                                                                                                     
+                </div>
+                <div class="position-absolute d-none">
+                    <svg width="325" height="585" viewBox="0 0 325 585" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M307 430L295 443L270 476.5L272.5 480.5L261 488.5L265.5 499L228 552" stroke="#CE7777"/>
+                        <circle cx="307" cy="430" r="8" fill="#EF9A53"/>
+                        <circle cx="307" cy="430" r="4" fill="#852999"/>
+                        <circle cx="228" cy="552" r="8" fill="#EF9A53"/>
+                        <circle cx="228" cy="552" r="4" fill="#852999"/>
+                        </svg>                                                                                                                   
+                </div>
+                <div id="map"></div>
+            </div>
+
         </div>
         <div class="container-result">
             <div class="container-align">
-                <span>Origem</span>
-                <div class="alert alert-primary mb-4" role="alert" id="origem-container">
-                    Selecione a cidade de origem pelo mapa
+                <span>Cidade de origem</span>
+                <div class="alert alert-primary mb-4 d-flex justify-content-between" role="alert" id="origem-container">
+                    Selecione no mapa
                 </div>
-                <span>Destino</span>
-                <div class="alert alert-danger mb-4" role="alert" id="destino-container">
-                    Selecione a cidade de destino pelo mapa
+                <span>Cidade de destino</span>
+                <div class="alert alert-danger mb-4 d-flex justify-content-between" role="alert" id="destino-container">
+                    Selecione no mapa
                 </div>
                 <div id="resultados-container">
                     <span>Resultados</span>
