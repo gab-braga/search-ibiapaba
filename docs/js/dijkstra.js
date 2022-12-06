@@ -41,12 +41,10 @@ const guaraciaba = new Cidade(2305001, "Guaraciaba do Norte");
 const croata = new Cidade(2304236, "Croatá");
 
 const A = new Vertice("A", vicosa, [
-    new Aresta(tiangua, 31.4),
-    new Aresta(tiangua, 33.4)
+    new Aresta(tiangua, 31.4)
 ]);
 const B = new Vertice("B", tiangua, [
     new Aresta(vicosa, 31.4),
-    new Aresta(vicosa, 33.4),
     new Aresta(ubajara, 16.7)
 ]);
 const C = new Vertice("C", ubajara, [
@@ -59,15 +57,12 @@ const D = new Vertice("D", ipiapina, [
 ]);
 const E = new Vertice("E", saobenedito, [
     new Aresta(ipiapina, 14.2),
-    new Aresta(carnaubal, 25.0),
     new Aresta(carnaubal, 19.1),
     new Aresta(guaraciaba, 22.7)
 ]);
 const F = new Vertice("F", carnaubal, [
-    new Aresta(saobenedito, 25.0),
     new Aresta(saobenedito, 19.1),
-    new Aresta(guaraciaba, 26.2),
-    new Aresta(croata, 41.0)
+    new Aresta(guaraciaba, 26.2)
 ]);
 const G = new Vertice("G", guaraciaba, [
     new Aresta(saobenedito, 22.7),
@@ -75,7 +70,6 @@ const G = new Vertice("G", guaraciaba, [
     new Aresta(croata, 36.6)
 ]);
 const H = new Vertice("H", croata, [
-    new Aresta(carnaubal, 41.0),
     new Aresta(guaraciaba, 36.6)
 ]);
 
