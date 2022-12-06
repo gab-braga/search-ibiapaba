@@ -139,6 +139,7 @@ function obterResultado(caminho) {
         message += caminho[i].cidade.nome;
         message += (i+1 < caminho.length) ? ", " : ".";
     }
+    distancia = distancia.toFixed(2);
     return {message, distancia};
 }
 
