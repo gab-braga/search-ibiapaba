@@ -206,6 +206,6 @@ function showResultados(resultados) {
     distanciaResul.innerText = resultados.distancia + " KM";
 }
 
-initilizeMap();
+/*initilizeMap();*/
 definirEventoDeCorCidade();
 definirEventoDeClickCidade();

@@ -58,13 +58,12 @@ html, body {
     /*filter: drop-shadow(0 0 10px gray);*/
 }
 
-#map path {
+#\32 314102, #\32 313401, #\32 313609, #\32 305308, #\32 312304, #\32 303402, #\32 305001, #\32 304236 {
+    stroke: #5595d4;
+    stroke-width: 1px;
     fill: #F5EFE6;
     cursor: pointer;
-    stroke: #5595d4;
-    stroke-width: 1rem;
 }
-
 
 .container-result {
     width: 32%;
